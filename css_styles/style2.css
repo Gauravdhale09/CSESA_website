@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.row{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.about-1 h1 span{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1f67db;
+    line-height: 50px;
+}
+.about-1 p{
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.column{
+    width: 100%;
+    
+    padding: 8px 0;
+}
+.card{
+    box-shadow: 0 0 35.2px rgba(25, 0, 58, 0.15 );
+    padding: 50px 10px;
+    border-radius: 9.6px;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 40px;
+}
+.email{
+    font-size: 20px;
+    color: #1f003b;
+    margin-top: 10px;
+    text-transform: none;
+    font-weight: 300;
+}
+.card:hover{
+    background: linear-gradient(#6045ea, #8567f7);
+    color: #ffffff;
+}
+
+.card .img-container{
+    width: 220px;
+    height: 220px;
+    background-color: #a993ff;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 0 auto 32px auto;
+}
+
+
+.card:hover .img-container{
+    transform: scale(1.15);
+}
+.card img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3{
+    font-weight: 500;
+    display: inline-block;
+}
+
+.card .post{
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+}
+
+.t-icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 23px;
+    margin: 30px;
+}
+
+@media screen and (min-width: 995px) {
+    .team{
+        padding: 16px;
+    }
+    .card{
+        padding: 80px 16px;
+    }
+    .column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 16px;
+    }
+    
+}
+
+@media screen and (min-width: 765px) {
+    .team{
+        padding: 16px 112px;
+    }
+    
+}
+@media screen and (max-width: 1108px) {
+    .email{
+        font-size: 15px;
+        color: #1f003b;
+        margin-top: 10px;
+        text-transform: none;
+        font-weight: 300;
+    }
+    
+}
